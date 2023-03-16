@@ -5,7 +5,6 @@ import Navigation from './Navigation';
 import Home from './Home';
 import About from './About';
 import NoMatch from './NoMatch';
-import LocationDisplay from './LocationDisplay';
 
 class AppRouter extends Component {
 	render() {
@@ -17,7 +16,6 @@ class AppRouter extends Component {
 					<Route path={'/about'} component={About} />
 					<Route path={'*'} component={NoMatch} />
 				</Switch>
-				<LocationDisplay />
 			</BrowserRouter>
 		);
 	}

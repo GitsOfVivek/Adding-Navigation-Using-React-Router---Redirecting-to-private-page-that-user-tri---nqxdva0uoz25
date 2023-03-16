@@ -1,9 +1,13 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { Component } from 'react';
 
-function LocationDisplay() {
-	const location = useLocation();
-	return <div data-testid="location-display">{location.pathname}</div>;
+export default class LocationDisplay extends Component {
+	constructor() {
+		super();
+		this.state = {
+			pathname: window.location.pathname,
+		};
+	}
+	render() {
+		return <div data-testid="location-display">{this.state.pathname}</div>;
+	}
 }
-
-export default LocationDisplay;
