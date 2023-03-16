@@ -6,7 +6,6 @@ export default class Home extends Component {
 		return (
 			<>
 				<div>You are home</div>
-				<LocationDisplay />
 			</>
 		);
 	}

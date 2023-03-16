@@ -6,7 +6,6 @@ export default class About extends Component {
 		return (
 			<>
 				<div>You are on the about page</div>
-				<LocationDisplay />
 			</>
 		);
 	}

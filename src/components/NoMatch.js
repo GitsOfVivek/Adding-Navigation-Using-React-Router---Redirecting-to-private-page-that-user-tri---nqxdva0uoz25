@@ -6,7 +6,6 @@ export default class NoMatch extends Component {
 		return (
 			<>
 				<div>No match</div>
-				<LocationDisplay />
 			</>
 		);
 	}
