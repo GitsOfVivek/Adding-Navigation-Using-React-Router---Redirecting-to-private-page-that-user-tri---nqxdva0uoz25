@@ -7,19 +7,21 @@ import About from './About';
 import NoMatch from './NoMatch';
 import LocationDisplay from './LocationDisplay ';
 
-const AppRouter = () => {
-	return (
-		<BrowserRouter>
-			<Navigation />
-			<Switch>
-				<Route exact path={'/'} component={Home} />
-				<Route path={'/about'} component={About} />
-				<Route path={'*'} component={NoMatch} />
-			</Switch>
-			<LocationDisplay />
-		</BrowserRouter>
-	);
-};
+class AppRouter extends Component {
+	render() {
+		return (
+			<BrowserRouter>
+				<Navigation />
+				<Switch>
+					<Route exact path={'/'} component={Home} />
+					<Route path={'/about'} component={About} />
+					<Route path={'*'} component={NoMatch} />
+				</Switch>
+				<LocationDisplay />
+			</BrowserRouter>
+		);
+	}
+}
 
 class App extends Component {
 	render() {
