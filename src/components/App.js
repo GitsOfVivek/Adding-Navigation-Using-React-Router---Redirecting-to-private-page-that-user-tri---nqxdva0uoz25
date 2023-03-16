@@ -5,7 +5,7 @@ import Navigation from './Navigation';
 import Home from './Home';
 import About from './About';
 import NoMatch from './NoMatch';
-import LocationDisplay from './LocationDisplay ';
+import LocationDisplay from './LocationDisplay';
 
 class AppRouter extends Component {
 	render() {
